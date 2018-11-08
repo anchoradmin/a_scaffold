@@ -1,8 +1,10 @@
-# AScaffold
+# A_Scaffold
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/a_scaffold`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Rails scaffolds are great for prototyping quickly but do not include important
+resource types such as nested resources (ie Post and Comments),
+subresources (ie Employee and Address),
+polymorphic resources (ie Employee and Addressable) that are often necessary.
+A_Scaffold is designed to make prototyping internal company CRUD applications faster.
 
 ## Installation
 
@@ -22,7 +24,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+rails generate a_scaffold PARENT_NAME/NAME [field:type field:type] [options]
+```
+Parent model should exist before running nested scaffold
 
 ## Development
 
@@ -32,7 +37,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/a_scaffold. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/anchorhealth/a_scaffold. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
@@ -40,4 +45,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the AScaffold project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/a_scaffold/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the A_Scaffold project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/a_scaffold/blob/master/CODE_OF_CONDUCT.md).
